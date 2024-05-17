@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: url('../image/background.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
+.container {
+    width: 50vw;
+    /* height: 80vh; */
+    height: auto;
+    padding-bottom: 5vh;
+    /* background: whitesmoke; */
+    background: rgb(245, 245, 245, 0.4);
+    margin: auto;
+    margin-top: 10vh;
+    border: 5px solid rgb(255, 255, 0, 0.4);
+    border-radius: 10px;
+    /* opacity: 0.4; */
+}
+
+.icon {
+    width: 50%;
+    /* height: 30%; */
+    background: transparent;
+    background-attachment: fixed;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.user-icon {
+    font-size: 160px;
+    width: 35%;
+    height: 40%;
+    margin: auto;
+    margin-top : 2vh;
+    padding: 10%;
+    padding-bottom: 0;
+    color: rgb(245, 245, 245, 1);
+    /* border: 2px solid rgba(192, 255,0, .4); */
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: transparent;
+    /* try to comment background */
+}
+h3{
+    background: transparent;
+    text-align: center;
+    font-size: 28px;
+    color: lightyellow;
+    margin-top: 3vh;
+}
+form,label,input,button{
+    background: transparent;
+    display: block;
+}
+.form_con{
+    width: 70%;
+    height: auto;
+    background: wheat;
+    margin: auto;
+    margin-top: 3%;
+    padding: 3%;
+    border: 5px solid rgb(255, 255, 0,0.5);
+    border-radius: 5px;
+}
+input{
+    margin: auto;
+    margin-bottom: 5%;
+    width: 66%;
+    height: 50%;
+    font-size: 1rem;
+    padding: 1.5% 2%;
+    border: 2px dashed black;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+label{
+    margin: auto;
+    margin-bottom: 2%;
+    width: 70%;
+    height: 30%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.jump_link{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    background: transparent;
+}
+button{
+    width:75%;
+    height : 5vh;
+    margin : auto;
+    margin-top: 4%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: blueviolet;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}

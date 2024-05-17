@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker Login Page</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="..\User_WebProject\php_code_t\web_addons\fontawesome\css\all.css">
+    <link rel="stylesheet" href="css_files/_signup_css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <i class="user-icon fa fa-user"></i>
+        </div>
+        <h3>SignUp in Image Picker</h3>
+        <form class="form_con" action="./php_files/_signup_hander.php" method="post">
+            <div class="inform_container">
+                <label for="fname">First Name : </label>
+                <!-- <input type="text" name="fname" required maxlength="10" minlength="2" pattern="[A-Z]{2-10}" title="This field only accept characters. e.g. Vishal" oninvalid="this.setCustomValidity('This field only accept characters. e.g. Vishal\nMinimum 2 and Maximum 10 characters allow');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Please enter your name"
+                    > -->
+                <input type="text" name="fname" required maxlength="10" minlength="2">
+            </div>
+            <div id="fname_vali" class="floating_validation_box">
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Minimum 2 & maximum 10 characters.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Special symbols not allow.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Numbers not allow.</p>
+            </div>
+            <div class="inform_container">
+                <label for="lname">Last Name : </label>
+                <input type="text" name="lname" required maxlength="10" minlength="2">
+            </div>
+            <div id="lname_vali" class="floating_validation_box">
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Minimum 2 & maximum 10 characters.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Special symbols not allow.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Numbers not allow.</p>
+            </div>
+            <div class="inform_container">
+                <label for="dob">Date Of Birth : </label>
+                <!-- <input type="text" name="date_of_birth"  placeholder="YYYY-MM-DD" required="" min="1920-01-01" max="2018-01-01" style="text-transform: uppercase;" pattern="\d{4}-\d{2}-\d{2}"> -->
+                <input type="date" name="date_of_birth" required min="1920-01-01" max="2018-01-01"
+                    style="text-transform: uppercase;">
+            </div>
+
+            <div class="inform_container">
+                <label for="username">Create Username : </label>
+                <input type="text" name="username" required maxlength="10" minlength="6" style="text-transform: none;">
+            </div>
+            <div id="c_username_vali" class="floating_validation_box">
+
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Minimum 6 & maximum 10 characters.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one special symbol.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one number.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one Uppercase letter.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one Lowercase letter.</p>
+
+            </div>
+            <div class="inform_container">
+                <label for="email">Email : </label>
+                <input type="email" name="email" required style="text-transform: none;" maxlength="50">
+            </div>
+            <div class="inform_container">
+                <label for="mobile_no">Phone No. : </label>
+                <!-- <input type="tel" name="moblie_no" required value="+91 " maxlength="15"> -->
+                <div style="background: transparent;margin: 0 0 0 27%;padding: 2px 0 0 0;height: 100%;">
+                    <input style="width: 20%;" type="tel" name="tel_code" required value="+91" maxlength="4"
+                        minlength="1">
+                    <input style="width: 69%;" type="tel" name="mobile_no" required maxlength="10" minlength="6">
+                </div>
+            </div>
+            <div class="inform_container">
+                <label for="password">Password : </label>
+                <input type="password" name="password" required style="width: 34%; text-transform: none;" maxlength="20"
+                    minlength="8">
+                <span id="password_message">Show Password</span>
+                <span id="password_eye"
+                    style="position: relative;width: 6%;background: transparent;height: 0%;top: 5px;border-bottom: 2px solid;">
+                    <i class="fas fa-eye-slash" style="cursor: pointer; background: white;color: black;"></i></span>
+            </div>
+            <div id="password_vali" class="floating_validation_box">
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Minimum 8 & maximum 20 characters.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one special symbol.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one number.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one Uppercase letter.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one Lowercase letter.</p>
+            </div>
+            <div class="inform_container">
+                <label for="password">Confirm Password : </label>
+                <input type="password" name="cpassword" required style="width: 34%;text-transform: none;" maxlength="20"
+                    minlength="8">
+                <span id="cpassword_message">Show Password</span>
+                <span id="cpassword_eye"
+                    style="position: relative;width: 6%;background: transparent;height: 0%;top: 5px;border-bottom: 2px solid;"><i
+                        class="fas fa-eye-slash" style="cursor: pointer; background: white;color: black;"></i></span>
+            </div>
+            <div id="cpassword_vali" class="floating_validation_box">
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Minimum 8 & maximum 20 characters.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one special symbol.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one number.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one Uppercase letter.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>At least one Lowercase letter.</p>
+                <p><span class="validation_mark" style="background: transparent;"><i class="fa fa-close"
+                            style="background: transparent;"></i></span>Password match.</p>
+
+            </div>
+            <div style="background: transparent;text-align: center;margin-top: 3%;">
+                <input type="checkbox" name="t_and_c" id="checkbox"
+                    style="color: black;width: auto;height: auto;margin: 0;">
+                <label for="t_and_c" style="font-weight: lighter;font-size: medium;font-family: fangsong;">I Accept
+                    All
+                    Terms And Conditions.</label>
+            </div>
+            <button type="submit" disabled style="opacity: 0.5;"> <i class="fa fa-lock" style="background: transparent;"
+                    title="hello"></i> Create
+                Account</button>
+        </form>
+    </div>
+    
+    <script src="..\User_WebProject\php_code_t\web_addons\fontawesome\js\all.js"></script>
+    <script src="js_files/_form_validation_functions.js"></script>
+    <script src="js_files/_password_hide_unhide.js"></script>
+    <script src="js_files/_form_validation_message.js"></script>
+    <script src="js_files/_signup_submit_button_state.js"></script>
+    <script src="js_files/_message_heander.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker Login Page</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="..\User_WebProject\php_code_t\web_addons\fontawesome\css\all.css">
+    <link rel="stylesheet" href="./css_files/_login_css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <i class="user-icon fa fa-user"></i>
+        </div>
+        <h3>Login in Image Picker</h3>
+        <form class="form_con" action="./php_files/_login_hander.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" required>
+            <div class="jump_link">
+                <a href="./_password_reset.php">Forget Password</a>
+                <a href="./_signup_page.html">I doesn't have any Account ?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="..\User_WebProject\php_code_t\web_addons\fontawesome\js\all.js"></script>
+    <script src="js_files/_message_heander.js"></script>
+</body>
+
+</html>
